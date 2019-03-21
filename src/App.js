@@ -6,7 +6,7 @@ import Todo from './components/Todo';
 class App extends Component {
 
     state = {
-        todo: [
+        todos: [
             {
                 id: 1,
                 item: "Just the first one",
@@ -29,7 +29,7 @@ class App extends Component {
       <div className="App">
         <Header/>
         <AddTodo/>
-        <Todo todo={this.state.todo}/>
+        <Todo todos={this.state.todos}/>
       </div>
     );
   }

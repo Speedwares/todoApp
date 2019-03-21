@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
-import '../index.css'
+import '../index.css';
+import PropTypes from 'prop-types';
 
 class TodoItem extends Component{
     getStyle = () => {
@@ -25,5 +26,9 @@ class TodoItem extends Component{
 
 }
 
+//This is the Proptypes
+TodoItem.propTypes = {
+    todo: PropTypes.object.isRequired
+}
 
 export default TodoItem;

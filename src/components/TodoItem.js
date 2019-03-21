@@ -4,24 +4,21 @@ import '../index.css'
 class TodoItem extends Component{
     getStyle = () => {
         return {
+            textDecoration: this.props.todo.completed ? 'line-through' : 'none',
             background: '#707070',
-            fontSize: '12px'
+            fontSize: '18px',
+            color: '#ffffff'
         }
     };
     render() {
         return(
             <div style={this.getStyle()}>
-                <p> {this.props.todo.item}</p>
+                <p style={{padding: '10px 20px'}}> {this.props.todo.item}</p>
             </div>
         )
 
     }
 
-}
-
-const background = {
-    background: '#707070',
-    fontSize: '12px'
 }
 
 

@@ -2,9 +2,15 @@ import React, {Component} from 'react'
 import '../index.css'
 
 class TodoItem extends Component{
+    getStyle = () => {
+        return {
+            background: '#707070',
+            fontSize: '12px'
+        }
+    };
     render() {
         return(
-            <div>
+            <div style={this.getStyle()}>
                 <p> {this.props.todo.item}</p>
             </div>
         )
@@ -12,5 +18,11 @@ class TodoItem extends Component{
     }
 
 }
+
+const background = {
+    background: '#707070',
+    fontSize: '12px'
+}
+
 
 export default TodoItem;

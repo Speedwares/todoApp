@@ -12,3 +12,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.todoHeader{
+  background: #bf2424;
+}
+
+.todoHeader p{
+  color: #ffffff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
+.addInput{
+  width: 100%;
+}
+
+.addTodo{
+  padding: 20px;
+}
+
+.addInput input{
+  width: 80%;
+  height: 30px;
+  display: inline-block;
+}
+
+.addBut{
+  background: black;
+  color: white;
+  padding: 10px 25px;
+  float: right;
+  border: 0px;
+
+}

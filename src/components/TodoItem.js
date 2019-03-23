@@ -19,7 +19,7 @@ class TodoItem extends Component{
                 <p style={{padding: '10px 20px'}}>
                     <input type="checkbox" onChange={this.props.testCheck.bind(this, id)} />
                     {'  '} {item}
-                <button style={buttonStyle}> Delete</button></p>
+                <button style={buttonStyle} onClick={this.props.deleteItem.bind(this)}> Delete</button></p>
             </div>
         )
 
@@ -37,7 +37,10 @@ const buttonStyle = {
     background: '#ff0000',
     color: '#fff',
     border: 'none',
-    padding: '10px 15px'
+    padding: '10px 15px',
+    float: 'right',
+    cursor: 'pointer',
+    borderRadius: '5px'
 }
 
 export default TodoItem;

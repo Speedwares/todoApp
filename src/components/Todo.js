@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 class Todo extends Component{
     render() {
         return this.props.todos.map((todo) =>(
-            <TodoItem todo={todo} key={todo.id} testCheck = {this.props.testCheck} deleteItem = {this.props.deleteItem}/>
+            <TodoItem todo={todo} key={todo.id} testCheck = {this.props.testCheck} deleteTodo = {this.props.deleteTodo}/>
             )
         )
     }

@@ -37,7 +37,7 @@ class App extends Component {
         });
 
     }
-    deleteItem = (id) => {
+    deleteTodo = (id) => {
         this.setState({
             todos: this.state.todos.map((todo) => {
                 if (todo.id === id) {
@@ -55,7 +55,7 @@ class App extends Component {
       <div className="App">
         <Header/>
         <AddTodo/>
-        <Todo todos={this.state.todos} testCheck = {this.testCheck} deleteItem = {this.deleteItem}/>
+        <Todo todos={this.state.todos} testCheck = {this.testCheck} deleteTodo = {this.deleteTodo}/>
       </div>
     );
   }

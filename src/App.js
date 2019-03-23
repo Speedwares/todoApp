@@ -37,12 +37,25 @@ class App extends Component {
         });
 
     }
+    deleteItem = (id) => {
+        this.setState({
+            todos: this.state.todos.map((todo) => {
+                if (todo.id === id) {
+                    todo.completed = !todo.completed
+                }
+                return todo;
+            })
+        });
+
+    }
+
+
   render() {
     return (
       <div className="App">
         <Header/>
         <AddTodo/>
-        <Todo todos={this.state.todos} testCheck = {this.testCheck}/>
+        <Todo todos={this.state.todos} testCheck = {this.testCheck} deleteItem = {this.deleteItem}/>
       </div>
     );
   }

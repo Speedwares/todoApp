@@ -19,7 +19,7 @@ class TodoItem extends Component{
                 <p style={{padding: '10px 20px'}}>
                     <input type="checkbox" onChange={this.props.testCheck.bind(this, id)} />
                     {'  '} {item}
-                <button style={buttonStyle} onClick={this.props.deleteItem.bind(this)}> Delete</button></p>
+                <button style={buttonStyle} onClick={this.props.deleteItem.bind(this, id)}> Delete</button></p>
             </div>
         )
 

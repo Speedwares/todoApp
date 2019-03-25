@@ -45,14 +45,23 @@ class App extends Component {
         });
 
     }
-
+    addTodo = (item) => {
+        const addNew = {
+            id: 4,
+            item,
+            completed: false
+        }
+        this.setState({
+            todos: [...this.state.todos, addNew]
+        })
+    }
 
 
   render() {
     return (
       <div className="App">
         <Header/>
-        <AddTodo addTodo={}/>
+        <AddTodo addTodo={this.addTodo}/>
         <Todo todos={this.state.todos} testCheck = {this.testCheck} deleteTodo = {this.deleteTodo}/>
       </div>
     );

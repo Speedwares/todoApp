@@ -12,7 +12,10 @@ class AddTodo extends Component{
         })
     }
 
-   
+    submitted = (e) =>{
+        e.preventDefault();
+        this.props.addTodo(this.state.title)
+    }
     render() {
         return(
             <div className="AddTodo" >

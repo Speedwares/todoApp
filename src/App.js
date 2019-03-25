@@ -39,22 +39,20 @@ class App extends Component {
     }
     deleteTodo = (id) => {
         this.setState({
-            todos: [...this.state.todos.filter((todo) => {
-                if (todo.id === id) {
-                    todo.completed = !todo.completed
-                }
-                return todo;
-            })]
+            todos: [...this.state.todos.filter(todo =>
+                todo.id !== id
+            )]
         });
 
     }
+
 
 
   render() {
     return (
       <div className="App">
         <Header/>
-        <AddTodo/>
+        <AddTodo addTodo={}/>
         <Todo todos={this.state.todos} testCheck = {this.testCheck} deleteTodo = {this.deleteTodo}/>
       </div>
     );

@@ -24,16 +24,12 @@ code {
   font-size: 20px;
 }
 
-.addInput{
-  width: 100%;
-}
 
 .addTodo{
   padding: 20px;
 }
 
 .addInput input{
-  width: 80%;
   height: 30px;
   display: inline-block;
 }
@@ -42,7 +38,6 @@ code {
   background: black;
   color: white;
   padding: 10px 25px;
-  float: right;
   border: 0px;
 
 }

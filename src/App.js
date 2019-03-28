@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './components/Header.js';
 import AddTodo from './components/AddTodo';
 import Todo from './components/Todo';
+import uuid from 'uuid';
 
 
 class App extends Component {
@@ -47,7 +48,7 @@ class App extends Component {
     }
     addTodo = (item) => {
         const addNew = {
-            id: 4,
+            id: uuid.v4(),
             item,
             completed: false
         }
